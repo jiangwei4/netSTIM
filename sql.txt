@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `Produits` (
   `nom` varchar(30) NOT NULL,
-  `quantité` int(11) NOT NULL,
+  `quantite` int(11) NOT NULL,
   `details` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -36,7 +36,7 @@ CREATE TABLE `Produits` (
 -- Contenu de la table `Produits`
 --
 
-INSERT INTO `Produits` (`nom`, `quantité`, `details`) VALUES
+INSERT INTO `Produits` (`nom`, `quantite`, `details`) VALUES
 ('ordinateur', 3, ''),
 ('test', 1, 'voici la description du produit'),
 ('test2', 4, 'fg'),
