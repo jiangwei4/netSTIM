@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:3306
--- Généré le :  Mar 13 Mars 2018 à 23:12
+-- Généré le :  Mer 14 Mars 2018 à 08:47
 -- Version du serveur :  5.7.21-0ubuntu0.17.10.1
 -- Version de PHP :  7.1.11-0ubuntu0.17.10.1
 
@@ -37,10 +37,9 @@ CREATE TABLE `Produits` (
 --
 
 INSERT INTO `Produits` (`nom`, `quantite`, `details`) VALUES
-('ordinateur', 3, ''),
-('test', 1, 'voici la description du produit'),
-('test2', 4, 'fg'),
-('a', 5, 'voici la description du produit');
+('ordinateur2', 8, ''),
+('ordinateur4', 7, 'oui2'),
+('portable', 7, 'oui');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
