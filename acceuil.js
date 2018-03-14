@@ -1,6 +1,7 @@
 
-    //l'information champ est sous la forme nom/quantité   on va donc séparer les deux informations en nom et quantié
+   
 function afficherDetails(champ){
+     //l'information champ est sous la forme nom/quantité   on va donc séparer les deux informations en nom et quantié
     delimiter = "/";
     for(i=0; i<champ.name.length; i++){
         if(champ.name[i] == delimiter){
@@ -11,7 +12,6 @@ function afficherDetails(champ){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-           // document.getElementById("affdetails").innerHTML = xhr.responseText;
             document.location = "details.php";
         }
     }
@@ -32,7 +32,6 @@ function modifierProduit(champ){
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
             document.getElementById("detailPrd").innerHTML = xhr.responseText;
-
         }
     }
     xhr.open("GET", "modifierProduit.php?nom="+nom);
@@ -46,7 +45,6 @@ function ajouterProduit(){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-          //  document.getElementById("detailPrd").innerHTML = xhr.responseText;
             alert(xhr.responseText);
             window.location.reload();
         }
@@ -59,7 +57,6 @@ function supprimerProduit(champ){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-         //   document.getElementById("detailPrd").innerHTML = xhr.responseText;
          alert(xhr.responseText);
          window.location.reload();
         }
@@ -75,7 +72,6 @@ function ajouterModificationProduit(champ){
         var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-         //   document.getElementById("detailPrd").innerHTML = xhr.responseText;
             alert(xhr.responseText);
             window.location.reload();
         }

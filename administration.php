@@ -8,8 +8,8 @@
     </head>
     <body>
         <fieldset>
-            <div id="detailPrd">
-            </div>
+        <div id="detailPrd">
+        </div>
             <legend> Liste des produits </legend>
 
             <?php
@@ -17,9 +17,9 @@
             ?>
             <fieldset>
             <legend>Ajouter un produit</legend>
-                <input type="text" id="nom">
-                <input type="number" min="0" id="quantite">
-                <input type="text" id="details">
+                <label>Nom</label><input type="text" id="nom"></br>
+                <label>Quantité</label> <input type="number" min="0" id="quantite"></br>
+                <label>Details</label><input type="text" id="details"></br>
                 <input type="button" value="Envoyer" name="buttonEnvoyer" onClick="ajouterProduit()" />
                 </fieldset>
             </br>
