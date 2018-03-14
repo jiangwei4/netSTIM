@@ -22,13 +22,13 @@ $result = mysqli_query($con, "SELECT nom from Produits");
         }
     }
     if($test){
-        echo '<h1>impossible ce produit existe déjà</h1>';
+        echo 'impossible ce produit existe déjà';
     } else {
         if($nom=="" || $quantite=="" || $details=="") {
-            echo '<h1>Vous avez mal remplie le formulaire</h1>';
+            echo 'Vous avez mal remplie le formulaire';
         } else {
         mysqli_query($con, "INSERT into Produits values ('$nom', '$quantite', '$details')") or die ('Erreur lors de l\'envoi');
-        echo '<h1>produit ajouté merci de recharger la page</h1>';
+        echo 'produit ajouté';
         }
     }
 

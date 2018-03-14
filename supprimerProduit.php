@@ -9,6 +9,5 @@ $nom=$_GET['nom'];
 
 $result = mysqli_query($con, "DELETE from Produits where nom='$nom'");
 
-echo '<h1>produit supprimé merci de recharger la page</h1>';
-
+echo 'produit supprimé';
 ?>

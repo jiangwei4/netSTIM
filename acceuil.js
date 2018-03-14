@@ -46,7 +46,9 @@ function ajouterProduit(){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-            document.getElementById("detailPrd").innerHTML = xhr.responseText;
+          //  document.getElementById("detailPrd").innerHTML = xhr.responseText;
+            alert(xhr.responseText);
+            window.location.reload();
         }
     }
     xhr.open("GET", "ajouterProduit.php?nom="+nom.value+"&quantite="+quantite.value+"&details="+details.value);
@@ -57,7 +59,9 @@ function supprimerProduit(champ){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-            document.getElementById("detailPrd").innerHTML = xhr.responseText;
+         //   document.getElementById("detailPrd").innerHTML = xhr.responseText;
+         alert(xhr.responseText);
+         window.location.reload();
         }
     }
     xhr.open("GET", "supprimerProduit.php?nom="+champ.name);
@@ -71,9 +75,12 @@ function ajouterModificationProduit(champ){
         var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-            document.getElementById("detailPrd").innerHTML = xhr.responseText;
+         //   document.getElementById("detailPrd").innerHTML = xhr.responseText;
+            alert(xhr.responseText);
+            window.location.reload();
         }
     }
     xhr.open("GET", "ajouterModificationProduits.php?nom="+champ.name+"&quantite="+quantite.value+"&details="+details.value);
     xhr.send(null);
 }
+
