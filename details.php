@@ -7,13 +7,9 @@
         <script src="acceuil.js"></script>
     </head>
     <body>
-
-
     <?php
         include("information.php")
     ?>
-
-
 
     </body>
     <footer></footer>

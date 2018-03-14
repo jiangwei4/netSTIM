@@ -31,7 +31,7 @@ function modifierProduit(champ){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-            document.getElementById("ajouterProduit").innerHTML = xhr.responseText;
+            document.getElementById("detailPrd").innerHTML = xhr.responseText;
 
         }
     }
@@ -46,7 +46,7 @@ function ajouterProduit(){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-            document.getElementById("ajouterProduit").innerHTML = xhr.responseText;
+            document.getElementById("detailPrd").innerHTML = xhr.responseText;
         }
     }
     xhr.open("GET", "ajouterProduit.php?nom="+nom.value+"&quantite="+quantite.value+"&details="+details.value);
@@ -57,7 +57,7 @@ function supprimerProduit(champ){
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-            document.getElementById("ajouterProduit").innerHTML = xhr.responseText;
+            document.getElementById("detailPrd").innerHTML = xhr.responseText;
         }
     }
     xhr.open("GET", "supprimerProduit.php?nom="+champ.name);
@@ -71,7 +71,7 @@ function ajouterModificationProduit(champ){
         var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function (){
         if(xhr.readyState == 4 && (xhr.status == 200 || xhr.status == 0)){
-            document.getElementById("ajouterProduit").innerHTML = xhr.responseText;
+            document.getElementById("detailPrd").innerHTML = xhr.responseText;
         }
     }
     xhr.open("GET", "ajouterModificationProduits.php?nom="+champ.name+"&quantite="+quantite.value+"&details="+details.value);

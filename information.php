@@ -1,6 +1,7 @@
 <?php
     session_start();
     $nom=$_SESSION['nom'];
+    //je fixe quantite et details dans le session storage afin de le recuperer dans information.php
     $quantite=$_SESSION['quantite'];
     $details=$_SESSION['details'];
     echo    '<fieldset>

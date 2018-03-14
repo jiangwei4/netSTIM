@@ -18,8 +18,11 @@ $result = mysqli_query($con, "SELECT * from Produits where nom='$nom'");
        $quantite = $row[1];
     }
     echo'
+    <fieldset>
+    <legend> modification pour : '.$nom.'</legend>
     <input type="number" value="'.$quantite.'" min="0" id="quantite">
     <input type="text" value="'.$details.'" id="details">
-    <input type="button" value="Envoyer" name="'.$nom.'" onClick="ajouterModificationProduit(this)" />
+    <input type="button" value="Modifer" name="'.$nom.'" onClick="ajouterModificationProduit(this)" />
+    </fieldset>
     ';
     ?>

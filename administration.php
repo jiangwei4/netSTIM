@@ -8,18 +8,20 @@
     </head>
     <body>
         <fieldset>
-            <div id="ajouterProduit">
+            <div id="detailPrd">
             </div>
             <legend> Liste des produits </legend>
 
             <?php
                 include("afficherProduitAdministration.php");
             ?>
+            <fieldset>
             <legend>Ajouter un produit</legend>
                 <input type="text" id="nom">
                 <input type="number" min="0" id="quantite">
                 <input type="text" id="details">
                 <input type="button" value="Envoyer" name="buttonEnvoyer" onClick="ajouterProduit()" />
+                </fieldset>
             </br>
         </fieldset>
     </body>

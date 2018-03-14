@@ -8,13 +8,14 @@ $details = $_GET['details'];
 //false si ce produit est unique
 $test = false;
 
-//test si le nom n'existe pas deja 
+
 
 //connection à la base de données
 $con = mysqli_connect('localhost', $login , $password , 'BDD') or die ('erreur de connexion au serveur');
 
 
 $result = mysqli_query($con, "SELECT nom from Produits");
+//on test si le nom n'existe pas deja 
     while ($row = mysqli_fetch_row($result)){
         if($row[0]==$nom){
         $test = true;
